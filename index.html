@@ -9,27 +9,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Places I've Been</h1>
-      <form id="addPlace">
-        <label for="location">Location: </label>
-          <input type="text" id="location"><br>
-        <label for="landmarks">Landmarks: </label>
-          <input type="text" id="landmarks"><br>
-        <label for="timeOfYear">Time of year: </label>
-          <input type="text" id="timeOfYear"><br>
-        <label for="notes">Notes: </label>
-          <input type="text" id="notes"><br>
-        <button type="submit" class="btn">Add</button>
-      </form>
-      <div class="locationsList">
-        <ul>
-        </ul>
+      <div class="jumbotron">
+        <h1>Places I've Been</h1>
       </div>
-      <div id="showLocation">
+      <div class="col-sm-6">
+        <form id="addPlace">
+          <div class="form-group">
+            <label for="city">City: </label>
+            <input type="text" class="form-control" id="city">
+          </div>
+          <div class="form-group">
+            <label for="country">Country: </label>
+            <input type="text" class="form-control" id="country">
+          </div>
+          <div class="form-group">
+            <label for="landmarks">Landmarks: </label>
+            <input type="text" class="form-control" id="landmarks">
+          </div>
+          <div class="form-group">
+            <label for="timeOfYear">Time of year: </label>
+            <input type="text" class="form-control" id="timeOfYear">
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes: </label>
+            <input type="text" class="form-control" id="notes">
+          </div>
+          <div class="form-group">
+            <label for="image">Image (URL): </label>
+            <input type="text" class="form-control" id="image">
+          </div>
+          <button type="submit" class="btn">Add</button>
+        </form>
+        <div class="locationsList">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div id="showLocation" class="col-sm-6">
         <h2></h2>
         <p>Landmark: <span class="showLandmark"></span></p>
         <p>Time of Year: <span class="showTime"></span></p>
         <p>Notes: <span class="showNotes"></span></p>
+        <p>Image:<br> <span class="showImage"></span></p>
       </div>
     </div>
   </body>
